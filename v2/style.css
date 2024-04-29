@@ -1,0 +1,88 @@
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+body {
+    background-image: url('https://wallpaperaccess.com/full/2000545.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto; 
+    min-height: 100vh;
+    display: flex;
+}
+
+.main-container {
+    flex: 1 0 auto;
+}
+
+.container {
+    height: 100vh; 
+    position: relative; 
+}
+
+.title {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro {
+    position: absolute;
+    top: 45%;
+    left: 10%; 
+    width: 50%;
+    text-align: left; 
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif; 
+    padding-top: 20px;
+}
+
+.scroll-grip {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em; 
+    font-family: 'Poppins', sans-serif; 
+    color: white;
+    animation: blink 2s infinite;
+
+}
+
+ .page-2 {
+    font-family: 'Poppins', sans-serif; 
+} 
+
+.blurred-element {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px); 
+    transition: left 0.5s ease-out; 
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
