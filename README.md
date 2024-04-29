@@ -1,4 +1,4 @@
-# Wev Developement Projects for 11COM
+# Wev Development Projects for 11COM
 
 ![CrypticBG](https://github.com/Cryptic1526/11COM-Python/assets/119151348/d131b9d3-a4ab-4312-9cd0-802f9c15ab04)
 
