@@ -1,17 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const blurredElement = document.getElementById('blurred-element');
 
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercentage = scrollPosition / maxScroll;
+    window.addEventListener('mousewheel', function(e) {
+        console.log(e)
 
-        // kill me now please
-        const newPosition = 50 - (scrollPercentage * 50);
-        const newBlur = 10 + (scrollPercentage * 10);
+        // add logic to move "blurred-element" to the left of the screen as user scrolls
 
-        blurredElement.style.right = `${newPosition}%`;
-        blurredElement.style.filter = `blur(${newBlur}px)`;
+        e.preventDefault();
+
     });
 });
 
