@@ -1,6 +1,7 @@
 # Wev Development Projects for 11COM
 
-![CrypticBG](https://github.com/Cryptic1526/11COM-Python/assets/119151348/d131b9d3-a4ab-4312-9cd0-802f9c15ab04)
+![CrypicBG](https://github.com/nemsip/11COM-HTML/assets/155419561/a1bebca7-376d-42e4-9a0b-7de19b4778e2)
+
 
 This is a Git repo for my web development stuff in year 11 Computer Studies (11COM) for Pakuranga College.
 
