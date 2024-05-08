@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Website</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cool Website</h1>
+        <h5>by Me</h5>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="nz.html">New Zealand</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><form class="navbar-search">
+                <input type="text" placeholder="Search..." name="query" id="search">
+                <button type="submit">
+                    <img src="static/images/search.svg" alt="Search Icon">
+                </button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Feedback</h2>
+        <div class="halfline"></div>
+        <div class="halfline"></div>
+        <hr>
+        <div class="halfline"></div>
+        <div class="halfline"></div>
+
+        <p>Give me your feedback. Rest assured; all submissions will be swiftly binned.<br><br></p>
+        <form class="goof" action="https://formsubmit.co/vbd4t14nw@mozmail.com" method="POST">
+            <h3>First name:</h3>
+            <input type="text" name="fname" class="inputField" size="60" placeholder="John">
+            <br><br>
+            <h3>Last name:</h3>
+            <input type="text" name="lname" class="inputField" size="60" placeholder="Doe">
+            <br><br>
+            <h3>Feedback</h3>
+            <input type="text" name="reason" class="inputField" size="60" placeholder="Feedback">
+            <br><br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Test Website (without Flask) by <em><a href="https://github.com/Cryptic1526">Cryptic1526</a></em><br><span class="halfline"></span> &copy; Copyright CDN (CrypticDeveloperNetwork) 2024.</p>
+    </footer>
+</body>
+</html>
+
+
+
