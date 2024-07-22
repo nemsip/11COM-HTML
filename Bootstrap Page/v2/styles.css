@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffaf87, #de3e40);
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem;
+    padding-bottom: 50x;
+    padding-top: 5px;
+
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 10px;
+
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none; 
+    cursor: pointer;
+    background-color: transparent;    
+    border: none; 
+    padding: 10px; 
+    color: #272727;
+    font-size: 30px;    
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+}
+
+.nav-links.active {
+    max-height: 500px; 
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+.section {
+    margin-bottom: 40px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 330px;
+    margin-bottom: 20px;
+}
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+}
+.card h3 {
+    margin-top: 0;
+}
+
+.review-carousel {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.review-slide {
+    text-align: center;
+    padding: 0 40px;
+    display: none; 
+    height: 142px; 
+
+    min-height: 150px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.review-slide:first-child {
+    display: block;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+.carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+.carousel-dot.active {
+    background-color: #333;
+}
+
+.contact-form {
+    background-color: #d2b48c;
+    padding: 20px;
+    border-radius: 8px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    margin-right: 20x;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.form-group textarea {
+    height: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form-checkbox {
+    margin-top: 10px;
+}
+.submit-btn {
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.submit-btn:hover {
+    background-color: #ff8c5a;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    font-size: 13px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 30%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#newsletter {
+    margin-right: 10px;
+    margin-left: 0px;
+
+}
+
+.form-checkbox input[type="checkbox"]:checked {
+    border-color: #834e33;
+    background-color: #ff7530;
+    
+
+
+}
+
+.form-checkbox p {
+    display: flex;
+}
+
+
+/* Responsive */
+
+@media (min-width: 769px) {
+    .navbar-toggle {
+         display: none; 
+     }
+    .nav-links {
+         display: flex!important; 
+     }
+ }
+ 
+ /* Styles for smaller screens */
+ @media (max-width: 768px) {
+    .navbar-toggle {
+         display: block; 
+     }
+    .nav-links {
+         display: none; 
+         flex-direction: column;
+         width: 100%;
+     }
+    .nav-links.active {
+         display: flex; 
+     }
+ }

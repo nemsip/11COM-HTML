@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ratatouille - Parisian Bistro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="La Ratatouille">
+    <meta property="og:title" content="La Ratatouille - Parisian Bistro">
+    <meta property="og:description" content="The popular Parisian bistro of Alfredo Linguini-Gusteau and partners">
+    <meta property="og:image" content="{{ url_for('static', filename='images/la_ratatouille.png') }}">
+    <meta property="og:url" content="https://www.example.com">
+
+    <meta name="description" content="The popular Parisian bistro of Alfredo Linguini-Gusteau and partners">
+    <meta name="keywords" content="La Ratatouille, Parisian, Bistro, Alfredo Linguini-Gusteau, Colette Tatou, The Little Chef, Anton Ego, Gusteau's, Solene LeClaire, Julia Child, Gordon Ramsay, Anton Ego, Ratatouille, Tomato, Leek & Potato Soup, Ratatouille Confit Byaldi, Sweetbreads Special, Freshly Baked Bread Selection, Lightning Mushrooms, Classic Omelette">
+    <meta name="author" content="Alfredo Linguini-Gusteau, Colette Tatou, The Little Chef, Anton Ego">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/la_ratatouille.png') }}" alt="La Ratatouille Logo" width="100">
+        <h1>La Ratatouille</h1>
+        <p>The popular Parisian bistro of Alfredo Linguini-Gusteau and partners</p>
+    </header>
+
+    <nav>
+        <!-- cool little hamburger menu thing liek bootstrap has -->
+        <button class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-controls="navbarLinks" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        <ul id="navbarLinks" class="nav-links" aria-labelledby="navbarToggle">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>After the closure of the world-class restaurant Gusteau's, head chefs Colette Tatou and Alfredo Linguini-Gusteau, along with a private collaborator who prefers to be known only as The Little Chef, founded a new bistro in the heart of Paris where they continue to produce new culinary creations. La Ratatouille is proudly supported by renowned food critic Anton Ego.</p>
+            
+            <h3>Our Team</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/cook1.jpg') }}" alt="Alfredo Linguini-Gusteau" class="card-image">
+                    <div class="card-content">
+                        <h3>Alfredo Linguini-Gusteau</h3>
+                        <p>Linguini is the only son of celebrated chef Auguste Gusteau and Renata Linguini. Full of false modesty, he insists that he has no talent at all, and is no good with food or words. Once the drawcard of Gusteau's restaurant, he now manages the front-of-house, and has been known to wait tables whilst wearing roller-skates.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/cook3.jpg') }}" alt="Colette Tatou" class="card-image">
+                    <div class="card-content">
+                        <h3>Colette Tatou</h3>
+                        <p>The toughest cook in the kitchen, chef Tatou has worked long and hard to penetrate the cutthroat world of French haute cuisine, becoming the only female chef at Gusteau's. She is a firm believer in Gusteau's motto, "Anyone can cook", and has committed all of his recipes to heart.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/cook2.jpg') }}" alt="The Little Chef" class="card-image">
+                    <div class="card-content">
+                        <h3>The Little Chef</h3>
+                        <p>The artist behind several of La Ratatouille's signature dishes, The Little Chef prefers to remain unidentified, so that aspiring creators everywhere can imagine themselves in The Little Chef's position, having risen from unbelievably humble origins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="menu" class="section">
+            <h2>Signature Dishes</h2>
+            <p>Please contact us or visit in person for a full menu.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/soup.jpg') }}" alt="Tomato, Leek & Potato Soup" class="card-image">
+                    <div class="card-content">
+                        <h3>Tomato, Leek & Potato Soup</h3>
+                        <p>A fresh twist on an old classic, this soup was first created when Linguini was merely a plongeur at Gusteau's, and he found himself having to improvise after knocking over a cauldron. Famously reviewed by Solene LeClaire, this is the soup that started it all.</p>
+                        <p><em>vegetarian, gluten-free</em></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/ratatouille.jpg') }}" alt="Ratatouille Confit Byaldi" class="card-image">
+                    <div class="card-content">
+                        <h3>Ratatouille Confit Byaldi</h3>
+                        <p>This traditional peasant's dish is guaranteed to instantly transport you to the nostalgic days of your childhood and rekindle your passion for a good meal. A favourite of critic and patron Anton Ego. One can never get too familiar with vegetables!</p>
+                        <p><em>Vegan, gluten-free</em></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/sweetbreads.jpg') }}" alt="Sweetbreads Special" class="card-image">
+                    <div class="card-content">
+                        <h3>Sweetbreads Special</h3>
+                        <p>A forgotten favourite of Chef Auguste Gusteau, this complicated mélange of veal stomach, seaweed and cuttlefish is a fresh surprise from an old master.</p>
+                        <p><em>gluten-free</em></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/bread.jpg') }}" alt="Freshly Baked Bread Selection" class="card-image">
+                    <div class="card-content">
+                        <h3>Freshly Baked Bread Selection</h3>
+                        <p>How do you tell how good bread is without tasting it? Not by the smell, not by the look, but by the sound of the crust. Oh, symphony of crackle! Only great bread sounds this way.
+                        </p>
+                        <p><em>Vegetarian</em></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/mushroom.jpg') }}" alt="Lightning Mushrooms" class="card-image">
+                    <div class="card-content">
+                        <h3>Lightning Mushrooms</h3>
+                        <p>A world first, these chanterelle mushrooms are caked in tomme de chèvre du pays (valley goat’s cheese) and tied together with rosemary and saffron. The mushrooms are then cooked with a unique method that creates a popping, zapping sensation in the mouth. Seasonal. Not a dish to be attempted at home!
+                        </p>
+                        <p><em>Vegan, gluten-free</em></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/omelette.jpg') }}" alt="Classic Omelette" class="card-image">
+                    <div class="card-content">
+                        <h3>Classic Omelette</h3>
+                        <p>An homage to the first meal shared between Linguini and The Little Chef, this dish serves as a reminder that sometimes trust is rewarded.</p>
+                        <p><em>gluten-free</em></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="reviews" class="section">
+            <h2>Reviews</h2>
+            <div class="review-carousel">
+
+                <div class="review-slide">
+                    <p>"Last night, I experienced something new: an extraordinary meal from a singularly unexpected source. To say that both the meal and its maker have challenged my preconceptions about fine cooking is a gross understatement. They have rocked me to my core."</p>
+                    <p>— Anton Ego</p>
+                </div>
+
+                <div class="review-slide">
+
+                    <p>"The food at La Ratatouille is simply exquisite. Each dish is a work of art, bursting with flavors that dance on your palate. A culinary experience like no other!"</p>
+                    <p>— Julia Child</p>
+                </div>
+
+                <div class="review-slide">
+                    <p>"I have never tasted such perfectly cooked ratatouille in my life. La Ratatouille has truly mastered the art of this classic French dish. A must-visit for all food enthusiasts!"</p>
+                    <p>— Gordon Ramsay</p>
+                </div>
+
+                <button class="carousel-nav carousel-prev">&#10094;</button>
+                <button class="carousel-nav carousel-next">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="carousel-dot active"></span>
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="events" class="section">
+            <h2>Events and Functions</h2>
+            <p>Contact us today to book a reservation at La Ratatouille. We have experience catering for large families. Share your next celebration with us!</p>
+            <div class="card-container">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/wedding.jpg') }}" alt="Wedding Celebration" class="card-image">
+                <div class="card-content">
+                <h3>Wedding Celebration</h3>
+                <p>Make your special day even more memorable with our exquisite catering services. Our team will work closely with you to create a customized menu that reflects your taste and style.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/birthday.jpg') }}" alt="Birthday Party" class="card-image">
+                <div class="card-content">
+                <h3>Birthday Party</h3>
+                <p>Celebrate your birthday in style at La Ratatouille. Our elegant venue and delectable menu options will ensure that your special day is unforgettable.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/corperate.jpg') }}" alt="Corporate Event" class="card-image">
+                <div class="card-content">
+                <h3>Corporate Event</h3>
+                <p>Impress your clients and colleagues with our professional catering services. From business meetings to conferences, we will provide delicious food and impeccable service to make your event a success.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="https://formsubmit.co/b6d05a0c1202968170004c0ed79e3f77" method="POST">
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject`" name="subject" placeholder="Enter subject" required class="outline">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required class="outline">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter message" required class="outline"></textarea>
+                </div>
+                <div class="form-checkbox">
+                    <p><input type="checkbox" id="newsletter" name="newsletter" checked> Subscribe to Our Newsletter?</div></p>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // thanks chatgpt
+        const slides = document.querySelectorAll('.review-slide');
+        const dots = document.querySelectorAll('.carousel-dot'); // Corrected querySelectorAll usage
+        let currentSlide = 0;
+    
+        function showSlide(n) {
+            slides[currentSlide].style.display = 'none'; // Hide current slide
+            dots[currentSlide].classList.remove('active'); // Remove 'active' class from current dot
+    
+            currentSlide = n > slides.length - 1? 0 : n < 0? slides.length - 1 : n; // Loop through slides
+            slides[currentSlide].style.display = 'block'; // Show selected slide
+            dots[currentSlide].classList.add('active'); // Add 'active' class to current dot
+        }
+    
+        document.querySelector('.carousel-next').addEventListener('click', () => showSlide(currentSlide + 1)); // Next button
+        document.querySelector('.carousel-prev').addEventListener('click', () => showSlide(currentSlide - 1)); // Previous button
+    
+        showSlide(0); // Initial slide display
+
+
+
+        //humburgur
+        document.getElementById('navbarToggle').addEventListener('click', function() {
+            var navLinks = document.getElementById('navbarLinks');
+            var expanded = this.getAttribute('aria-expanded') === 'true' || 'false';
+            this.setAttribute('aria-expanded',!expanded);
+            navLinks.classList.toggle('active');
+        
+            if (!expanded) {
+                navLinks.setAttribute('tabindex', 0);
+            } else {
+                navLinks.setAttribute('tabindex', -1);
+            }
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 La Ratatouille. All rights reserved. <br><small>Images courtesy of Pixar Animation Studios</small></p>
+    </footer>
+</body>
+</html>
